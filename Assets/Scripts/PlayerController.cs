@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        GlobalScoreManager.ResetScore();
     }
 
     // Update is called once per frame

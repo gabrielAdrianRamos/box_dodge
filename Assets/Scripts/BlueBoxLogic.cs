@@ -14,7 +14,9 @@ public class BlueBoxLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y < -6f){
+        if (transform.position.y < -6f)
+        {
+            GlobalScoreManager.AddPointToGlobalScore();
             Destroy(gameObject);
         }
     }
@@ -22,6 +24,8 @@ public class BlueBoxLogic : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             SceneManager.LoadScene("Gameover");
+
+            PlayerPrefs.SetInt("score", GlobalScoreManager.GetGlobalScore());
         }
     }
 }
