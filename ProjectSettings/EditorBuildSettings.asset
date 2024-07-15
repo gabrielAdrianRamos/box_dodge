@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Gameover.unity
     guid: 6964e2edefdd7154da8249c96793e7fe
   - enabled: 1
-    path: Assets/Scenes/Settings.unity
+    path: Assets/Scenes/SkinSelect.unity
     guid: c1cabeb2c0045c34f9b3022bb3dff8b0
+  - enabled: 1
+    path: Assets/Scenes/Settings.unity
+    guid: 1acea8aee0d40a543b78be29971cbc45
   m_configObjects: {}

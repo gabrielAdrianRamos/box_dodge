@@ -9,10 +9,19 @@ public class PlayerController : MonoBehaviour
     private bool isMoving = false;
     public float moveSpeed = 5f;
     public float stoppingDistance = 0.1f;
+
+
+    public Sprite[] skinSprites;
+    private SpriteRenderer spriteRenderer;
+    private int selectedSkinIndex = 1;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         GlobalScoreManager.ResetScore();
+        selectedSkinIndex = PlayerPrefs.GetInt("SelectedSkinIndex", 0);
+        spriteRenderer.sprite = skinSprites[selectedSkinIndex];
     }
 
     // Update is called once per frame

@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 91510813}
   - component: {fileID: 91510814}
   m_Layer: 0
-  m_Name: playerSkin1
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -397,6 +397,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   stoppingDistance: 0.1
+  skinSprites:
+  - {fileID: 21300000, guid: 9c0549ef1b9fe8142986b7420d140102, type: 3}
+  - {fileID: 21300000, guid: a1cf30410cfd21e449546ce4fa08e8ea, type: 3}
+  - {fileID: 21300000, guid: a1b06dad7d1d98448a4d285958037170, type: 3}
 --- !u!1 &148025010
 GameObject:
   m_ObjectHideFlags: 0
